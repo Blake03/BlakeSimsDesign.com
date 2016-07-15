@@ -147,10 +147,38 @@ h2, h3{
 #responsive img{
 	width: 98vw;
 }
-/*--about-section--*/
+
 #development{
 	background-color: green;
 }
 #development img{
 	width: 98vw;
+}
+
+/*--work-section--*/
+
+#work{
+	min-height: 100vh;
+	background-color: grey;
+}
+
+.img-box{
+	width: 90vw;
+	margin: 0px auto;
+	padding-bottom: 40px;
+}
+
+.img-box img{
+	width: 100%;
+}
+
+/*--about-section--*/
+
+#about{
+	background-color: #504c4c;	
+}
+
+#about .wrapper{
+	padding: 10px;
+	text-align: justify;
 }
