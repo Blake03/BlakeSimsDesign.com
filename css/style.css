@@ -159,11 +159,11 @@ h2, h3{
 
 #work{
 	min-height: 100vh;
-	background-color: grey;
+	background-color: rgba(0, 0, 0, 0.86);
 }
 
 .img-box{
-	width: 90vw;
+	width: 92vw;
 	margin: 0px auto;
 	padding-bottom: 40px;
 }
