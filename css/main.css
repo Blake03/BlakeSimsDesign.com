@@ -41,8 +41,8 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+    margin: 3em 0;
+   
 }
 
 /*
@@ -142,6 +142,9 @@ h2, h3{
     text-align: center;
     padding: 20px;
 }
+section{
+  padding: 30px 0px;
+}
 
 /*--welcome-section--*/
 
@@ -171,8 +174,12 @@ h2, h3{
 
 .sub-heading{
   font-size: 7.5vw;
-  padding-top: 5px;
   display: block;
+}
+
+nav{
+  width: 75vw;
+  margin: 0 auto;
 }
 
 .social-icons{
@@ -183,9 +190,9 @@ h2, h3{
 .ghost-button-semi-transparent {
   display: inline-block;
   width: 29vw;
-  margin: 5px auto;
+  margin: 5px ;
   padding: 3px;
-  
+  font-size: 3.3vw;
   color: #fff;
   border: 2px solid #fff;
   border-radius: 5px;
@@ -227,7 +234,7 @@ h2, h3{
 
 /*--responsive-section--*/
 #responsive{
-    background-color: blue;
+    background-color: #30304a;
 }
 
 .wrapper{
@@ -240,7 +247,7 @@ h2, h3{
 }
 
 #development{
-    background-color: green;
+    background-color: #036303;
 }
 #development img{
     width: 98vw;
@@ -250,13 +257,14 @@ h2, h3{
 
 #work{
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.86);
-}
+    background-color: rgb(39, 15, 13);}
 
-.img-box{
+.img-box {
     width: 92vw;
     margin: 0px auto;
-    padding-bottom: 40px;
+    background-color: #292929;
+    border-radius: 7px;
+    padding: 9px;
 }
 
 .img-box img{
@@ -266,7 +274,8 @@ h2, h3{
 /*--about-section--*/
 
 #about{
-    background-color: #504c4c;  
+    background-color: #504c4c; 
+    background-image: url("../images/rocks01.jpg");
 }
 
 #about .wrapper{
