@@ -21,6 +21,29 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <nav class="navbar" style="display:none">
+            <div class="navbar-header">
+               <a  class="logo" href="#"><li>BlakeSimsDesign.com</li></a>
+               <button>Menue</button>
+            </div><!--navbar-header-->
+            
+            <div class="nav-menue" style="display:none">
+              <ul class="clearfix:after">
+                <a href="#responsive"><li>What Blake Does</li></a>
+                <a href="#work"><li>Blake's Work</li></a>
+                <a href="#about"><li>Who is Blake</li></a>
+              </ul>
+            </div>
+        </nav><!--navbar-->
+
+        <!--<div class="nav-menue" style="display:none">
+          <ul>
+            <a href="#responsive"><li>What Blake Does</li></a>
+            <a href="#work"><li>Blake's Work</li></a>
+            <a href="#about"><li>Who is Blake</li></a>
+          </ul>
+        </div><!--navbar-->
+
         <!--start-welcome-section
 ====================================================-->
 <section id="welcome">
@@ -35,7 +58,7 @@
     <a class="smoothScroll ghost-button-semi-transparent" 
         href="#work">See My Work</a>
     <a class="smoothScroll ghost-button-semi-transparent" 
-        href="#work">Blake@edelta.net</a>
+        href="mailto:blake@edelta.net">Blake@edelta.net</a>
       <span class="social-icons">
         <a href="#"><i class="fa fa-github-square" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
@@ -127,12 +150,34 @@
 <!--end-about-section
 ====================================================-->
 
+<!--scrip-tags-->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<!--nav-menue-toggle-->
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".nav-menue").toggle();
+    });
+});
+</script>
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+<!--nav-menue-fadeIn/fadeOut-->
+<script>
+$(function() {
 
+  $(window).on('scroll', function() {
+
+    if ($(window).scrollTop() >= 340) {
+       $('.navbar').fadeIn('slow');
+    } else {
+       $('.navbar').fadeOut('slow');
+    }
+  });
+});
+</script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
