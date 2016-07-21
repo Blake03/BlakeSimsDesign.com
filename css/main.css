@@ -181,6 +181,7 @@ nav.nav-menue{
   float: left;
   display: inline-block;
   margin: 0 auto;
+  padding: 2px;
 }
 
 .navbar button{
@@ -299,16 +300,15 @@ nav{
     padding-bottom: 20px;
 }
 
-#responsive img{
-    width: 98vw;
+#responsive img,
+#development img{
+    width: 98%;
 }
 
 #development{
     background-color: #034603;
 }
-#development img{
-    width: 98vw;
-}
+
 
 /* ==========================================================================
    Work Section
@@ -319,7 +319,7 @@ nav{
     background-color: rgb(39, 15, 13);}
 
 .img-box {
-    width: 84vw;
+    width: 77vw;
     margin: 0px auto;
     background-color: #292929;
     border-radius: 7px;
@@ -340,6 +340,7 @@ nav{
     background-color: #504c4c; 
     background-image: url("../images/skyfield.jpg");
     background-size: cover;
+    min-height: 100vh;
 }
 
 #about .wrapper{
@@ -447,9 +448,77 @@ a.back-to-top {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+#welcome .wrapper{
+  top: 9vh;
 }
 
+.navbar{
+  font-size: 1em;
+}
+
+}
+@media only screen and (min-width: 46em) {
+body{
+  font-size: 1.2em;
+}
+
+h2{
+  margin-top: 10px;
+}
+
+#welcome .wrapper{
+  top: 22vh;
+}
+
+#responsive,
+#development{
+ height: 45vh;
+}
+
+
+
+#responsive p,
+#development p{
+  padding: 0px 40px;
+  display: block;
+  transform: translateY(48%);
+  padding: 0px, 40px;
+}
+
+#responsive p{
+transform: translateY(152%);}
+
+#responsive .wrapper,
+#development .wrapper{
+  height: 45vh;
+}
+
+#responsive img,
+#development img{
+  width: 55%;
+}
+
+#responsive img{
+  float: left;
+}
+
+#development img{
+  float: right;
+}
+
+.img-box{
+  width: 64vw;
+}
+
+#about .wrapper {
+    padding: 50px;
+    text-align: justify;
+    padding-bottom: 80px;
+}
+
+
+
+}
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
