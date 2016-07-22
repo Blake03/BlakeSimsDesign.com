@@ -150,7 +150,7 @@ section{
 
 .navbar{
   position: fixed;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   font-size: 10px;
   text-align: center;
   width: 100%;
@@ -159,7 +159,6 @@ section{
 
 nav.nav-menue{
   position: fixed;
-  background: rgba(0, 0, 0, 0.5);
   font-size: 10px;
   text-align: center;
   width: 100%;
@@ -181,7 +180,7 @@ nav.nav-menue{
   float: left;
   display: inline-block;
   margin: 0 auto;
-  padding: 2px;
+  padding: 2px 11px;
 }
 
 .navbar button{
@@ -289,6 +288,7 @@ nav{
 #responsive p ,
 #development p{
   padding: 0px 15px;
+  text-align: justify;
 }
 
 #responsive{
@@ -302,7 +302,7 @@ nav{
 
 #responsive img,
 #development img{
-    width: 98%;
+    width: 100%;
 }
 
 #development{
@@ -344,7 +344,7 @@ nav{
 }
 
 #about .wrapper{
-    padding: 75px;
+    padding: 10px;
     text-align: justify;
     padding-bottom: 80px;
 }
@@ -484,9 +484,9 @@ h2{
 }
 
 #responsive .text-wrap{
-  width: 50vw;
+  width: 47vw;
   float: left;
-  padding-top: 108px;
+  padding: 108px 0px 0px 10px;
 }
 
 #development .img-wrap{
@@ -496,10 +496,13 @@ h2{
 }
 
 #development .text-wrap{
-  width: 50vw;
-  float: right;
-  padding-top: 70px;
+    width: 47vw;
+    float: right;
+    padding: 70px 0px 0px 10px;
+    text-align: justify;
+
 }
+
 
 .img-box{
   width: 62vw;
@@ -512,6 +515,11 @@ h2{
 
 .right{
   float: right;
+}
+
+#about .wrapper{
+      padding: 75px;
+
 }
 /*---What-I-Do---
 .clear{
