@@ -344,7 +344,7 @@ nav{
 }
 
 #about .wrapper{
-    padding: 10px;
+    padding: 75px;
     text-align: justify;
     padding-bottom: 80px;
 }
@@ -442,12 +442,12 @@ a.back-to-top {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries
    ========================================================================== */
 
+/*---mobile-landskape---*/
 @media only screen and (min-width: 35em) {
+
 #welcome .wrapper{
   top: 9vh;
 }
@@ -457,7 +457,10 @@ a.back-to-top {
 }
 
 }
+
+/*---tablet---*/
 @media only screen and (min-width: 46em) {
+
 body{
   font-size: 1.2em;
 }
@@ -465,9 +468,54 @@ body{
 h2{
   margin-top: 10px;
 }
-
+.wrapper{
+  padding-top: 20px;
+}
 #welcome .wrapper{
   top: 22vh;
+}
+
+
+
+
+#responsive .img-wrap{
+  width: 50vw;
+  float: left;
+}
+
+#responsive .text-wrap{
+  width: 50vw;
+  float: left;
+  padding-top: 108px;
+}
+
+#development .img-wrap{
+  width: 50vw;
+  float: right;
+
+}
+
+#development .text-wrap{
+  width: 50vw;
+  float: right;
+  padding-top: 70px;
+}
+
+.img-box{
+  width: 62vw;
+}
+
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+/*---What-I-Do---
+.clear{
+  clear: both;
 }
 
 #responsive,
@@ -476,13 +524,11 @@ h2{
 }
 
 
-
 #responsive p,
 #development p{
-  padding: 0px 40px;
+  padding: 0px 8px;
   display: block;
   transform: translateY(48%);
-  padding: 0px, 40px;
 }
 
 #responsive p{
@@ -491,11 +537,15 @@ transform: translateY(152%);}
 #responsive .wrapper,
 #development .wrapper{
   height: 45vh;
+  padding-left: 20px;
+  padding-right: 20px;
+
 }
 
 #responsive img,
 #development img{
   width: 55%;
+  max-width: 288px;
 }
 
 #responsive img{
@@ -507,7 +557,7 @@ transform: translateY(152%);}
 }
 
 .img-box{
-  width: 64vw;
+  width: 63vw;
 }
 
 #about .wrapper {
@@ -516,9 +566,14 @@ transform: translateY(152%);}
     padding-bottom: 80px;
 }
 
-
-
+}*/
+/*
+@media only screen and (min-width: 70em) {
+.navbar li {
+    width: 22vw;
 }
+}
+*/
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
