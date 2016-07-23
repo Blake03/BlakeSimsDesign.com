@@ -184,7 +184,7 @@ nav.nav-menue{
 }
 
 .navbar button{
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.1);
   border: none;
   float: right;
   z-index: 10;
@@ -284,6 +284,10 @@ nav{
 /* ==========================================================================
    What I Do Section
    ========================================================================== */
+#responsive h2 ,
+#development h2{
+padding: 0px;
+}
 
 #responsive p ,
 #development p{
@@ -309,7 +313,9 @@ nav{
     background-color: #034603;
 }
 
-
+.dt-only{
+display: none;
+}
 /* ==========================================================================
    Work Section
    ========================================================================== */
@@ -465,6 +471,10 @@ body{
   font-size: 1.2em;
 }
 
+nav .navbar li {
+    width: 32vw;
+}
+
 h2{
   margin-top: 10px;
 }
@@ -475,7 +485,9 @@ h2{
   top: 22vh;
 }
 
-
+h3{
+  text-align: left;
+}
 
 
 #responsive .img-wrap{
@@ -487,6 +499,7 @@ h2{
   width: 47vw;
   float: left;
   padding: 108px 0px 0px 10px;
+  text-align: left;
 }
 
 #development .img-wrap{
@@ -509,17 +522,10 @@ h2{
 }
 
 
-.left{
-  float: left;
-}
-
-.right{
-  float: right;
-}
-
 #about .wrapper{
-      padding: 75px;
-
+  width: 588px;
+  margin: auto;
+}
 }
 /*---What-I-Do---
 .clear{
@@ -575,13 +581,41 @@ transform: translateY(152%);}
 }
 
 }*/
-/*
+/*---desktop---*/
 @media only screen and (min-width: 70em) {
+#responsive .text-wrap,
+#devlopmetn .text-wrap{
+      padding: 186px 0px 0px 10px;
+}
+
+
+#about .wrapper {
+    padding: 75px;
+
+    margin: auto;
+}
+
+
 .navbar li {
-    width: 22vw;
+  width: 20vw
 }
+
+.navbar button {
+    padding: 2px;
+    width: 12vw;
 }
-*/
+#responsive h2,
+#development h2{
+    display: none !important;
+}
+
+.dt-only{
+display: inherit;
+}
+
+
+}
+
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
