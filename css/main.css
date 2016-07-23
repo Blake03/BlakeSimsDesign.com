@@ -536,7 +536,31 @@ h3{
 }
 
 /*---desktop---*/
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 71em) {
+#welcome{
+  line-height: 1.2;
+}
+
+#welcome .heading{
+  font-size: 75px;
+}
+
+#welcome .sub-heading{
+  font-size: 50px;
+}
+
+.ghost-button-semi-transparent {
+  font-size: 19px;
+  width: unset;
+}
+
+#welcome span{
+  padding: 0px;
+}
+
+.social-icons a {
+    font-size: 34px;
+}
 #responsive .text-wrap,
 #devlopmetn .text-wrap{
       padding: 186px 0px 0px 10px;
@@ -567,6 +591,11 @@ h3{
 .responsive-screenshot{
     padding: 0px 46px;
     max-height: 74vh;
+    float: left;
+}
+
+.img-box img{
+  max-height: 72vh;
 }
 
 .dt-only{
@@ -585,6 +614,17 @@ display: inherit;
 
 .img-box-responsive{
   float: left;
+}
+.lg-text-box{
+  padding: 20px;
+  text-align: justify;
+}
+h4{
+  text-align: center;
+}
+
+#about{
+  background-image: url("../images/skyfield-desktop1.jpg");
 }
 
 }
