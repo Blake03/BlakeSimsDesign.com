@@ -564,10 +564,28 @@ h3{
     display: none !important;
 }
 
+.responsive-screenshot{
+    padding: 0px 46px;
+    max-height: 74vh;
+}
+
 .dt-only{
 display: inherit;
 }
 
+.small-only{
+  display: none;
+}
+
+.img-box {
+    width: 26vw;
+    margin: 0px 23px;
+    display: inline-block;
+}
+
+.img-box-responsive{
+  float: left;
+}
 
 }
 
