@@ -148,11 +148,17 @@ section{
   padding: 30px 0px;
 }
 
+
+/*---Navbar---*/
+nav{
+  width: 75vw;
+  margin: 0 auto;
+}
+
 .navbar{
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
   font-size: 10px;
-  text-align: center;
   width: 100%;
    z-index: 1;
 }
@@ -160,23 +166,21 @@ section{
 nav.nav-menue{
   position: fixed;
   font-size: 10px;
-  text-align: center;
+  text-align: ;
   width: 100%;
 
 }
 
 .navbar ul{
   width: 100%;
-  text-align: center;
+  text-align: ;
 }
 
-.logo{
-  right: 0px;
-}
+
 
 .navbar li,
 .nav-menue li{
-  width: 33vw;
+  width: 35%;
   float: left;
   display: inline-block;
   margin: 0 auto;
@@ -188,6 +192,11 @@ nav.nav-menue{
   border: none;
   float: right;
   z-index: 10;
+  padding-right: 10px;
+}
+
+nav .navbar-header .logo .li{
+  right: 0px;
 }
 
 button:focus {
@@ -225,11 +234,6 @@ button:focus {
 .sub-heading{
   font-size: 7.5vw;
   display: block;
-}
-
-nav{
-  width: 75vw;
-  margin: 0 auto;
 }
 
 .social-icons{
@@ -286,7 +290,7 @@ nav{
    ========================================================================== */
 #responsive h2 ,
 #development h2{
-padding: 0px;
+padding: 20px;
 }
 
 #responsive p ,
@@ -471,9 +475,6 @@ body{
   font-size: 1.2em;
 }
 
-nav .navbar li {
-    width: 32vw;
-}
 
 h2{
   margin-top: 10px;
@@ -481,6 +482,12 @@ h2{
 .wrapper{
   padding-top: 20px;
 }
+
+.navbar li,
+.nav-menue li{
+  width: 38%;
+  }
+
 #welcome .wrapper{
   top: 22vh;
 }
@@ -527,60 +534,7 @@ h3{
   margin: auto;
 }
 }
-/*---What-I-Do---
-.clear{
-  clear: both;
-}
 
-#responsive,
-#development{
- height: 45vh;
-}
-
-
-#responsive p,
-#development p{
-  padding: 0px 8px;
-  display: block;
-  transform: translateY(48%);
-}
-
-#responsive p{
-transform: translateY(152%);}
-
-#responsive .wrapper,
-#development .wrapper{
-  height: 45vh;
-  padding-left: 20px;
-  padding-right: 20px;
-
-}
-
-#responsive img,
-#development img{
-  width: 55%;
-  max-width: 288px;
-}
-
-#responsive img{
-  float: left;
-}
-
-#development img{
-  float: right;
-}
-
-.img-box{
-  width: 63vw;
-}
-
-#about .wrapper {
-    padding: 50px;
-    text-align: justify;
-    padding-bottom: 80px;
-}
-
-}*/
 /*---desktop---*/
 @media only screen and (min-width: 70em) {
 #responsive .text-wrap,
@@ -597,12 +551,13 @@ transform: translateY(152%);}
 
 
 .navbar li {
-  width: 20vw
+  width: 20vw;
+      padding: 2px 16px;
 }
 
 .navbar button {
     padding: 2px;
-    width: 12vw;
+    width: 8vw;
 }
 #responsive h2,
 #development h2{
