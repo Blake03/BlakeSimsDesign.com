@@ -537,6 +537,24 @@ h3{
 
 /*---desktop---*/
 @media only screen and (min-width: 71em) {
+
+.dt-only{
+display: inherit;
+}
+
+.navbar li {
+  width: 20vw;
+  padding: 2px 16px;
+}
+
+.navbar button {
+    padding: 2px;
+    width: 8vw;
+}
+
+
+
+
 #welcome{
   line-height: 1.2;
 }
@@ -561,28 +579,15 @@ h3{
 .social-icons a {
     font-size: 34px;
 }
+
+
+
+
 #responsive .text-wrap,
 #devlopmetn .text-wrap{
-      padding: 186px 0px 0px 10px;
+  padding: 186px 0px 0px 10px;
 }
 
-
-#about .wrapper {
-    padding: 75px;
-
-    margin: auto;
-}
-
-
-.navbar li {
-  width: 20vw;
-      padding: 2px 16px;
-}
-
-.navbar button {
-    padding: 2px;
-    width: 8vw;
-}
 #responsive h2,
 #development h2{
     display: none !important;
@@ -596,10 +601,6 @@ h3{
 
 .img-box img{
   max-height: 72vh;
-}
-
-.dt-only{
-display: inherit;
 }
 
 .small-only{
@@ -626,6 +627,33 @@ h4{
 #about{
   background-image: url("../images/skyfield-desktop1.jpg");
 }
+
+#about .wrapper {
+  padding: 75px;
+  display: inline-block;
+  margin: auto;
+}
+
+#about .dt-only{
+  display: inline-block;
+  padding: 75px 75px 0px 0px;
+  margin: auto;
+  width: 35%;
+  text-align: center;
+  float: right;
+}
+
+#about .dt-only li{
+  width: 40%;
+  display: inline-block;
+
+}
+
+.skills h2,
+.intrests h2{
+  text-decoration: underline;
+}
+
 
 }
 
