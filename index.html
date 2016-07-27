@@ -6,14 +6,12 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <!--fontAwesome-->
         <script src="https://use.fontawesome.com/acc67931bc.js"></script>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -35,7 +33,6 @@
                 <a href="#responsive"><li>What Blake Does</li></a>
                 <a href="#work"><li>Blake's Work</li></a>
                 <a href="#about"><li>Who is Blake</li></a>
-
                <!-- <a href="#"><i class="nav-social fa fa-github-square" aria-hidden="true"></i></a>
                 <a href="#"><i class="nav-social fa fa-twitter-square" aria-hidden="true"></i></a>
                 <a href="#"><i class="nav-social fa fa-linkedin-square" aria-hidden="true"></i></a>-->
@@ -64,9 +61,9 @@
         <a href="#"><i class="fa fa-github-square" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-      </span>
+      </span><!--social-icons-->
     </nav>
-  </div>
+  </div><!--wrapper-->
 </section><!--welcome-->
 <!--end-welcome-section
 ====================================================-->
@@ -127,16 +124,16 @@
         <div class="lg-text-box">
           <h4>Testomonial</h4>
           <p>I am very pleased whith the work done by Blake. He was profesional, quick to respond, and helped me understand website devlopment - somthing I had no previous experiance with.</p>
-          
         </div>
     </div><!--dt-only-->
+    
     <div class="small-only">
     <a href="#work"><h2>My Works</h2></a>
       <div class="img-box img-box-responsive">
         <img src="images/mobile-screenshot-leila.jpg">
         <p>LeilaAlexandra.com is a fully responsive single-page art gallery that I built from scratch using HTML5/CSS3, jQuery and PhotoShop.</p>
       </div><!--img-box-->
-</div><!--small-only-->
+    </div><!--small-only-->
       <hr>
       
       <div class="img-box">
@@ -144,15 +141,18 @@
         <p>MSIdrywall.com, MSI is a multinational construction company. This website is powred by WordPress and features a login area for members and a Flash header that i built before Flash became obsolete.</p>
       </div><!--img-box-->
       <hr class="small-only">
+      
       <div class="img-box">
         <img src="images/mobile-screenshot-mcgeheechamber.jpg">
         <p>McgeheeChamber.com is a Wordpress blog that I built for the chambor of commerce in my little home town. I also taught the owner how to update content and post current info and articles</p>
       </div><!--img-box-->
       <hr class="small-only">
+      
       <div class="img-box">
         <img src="images/mobile-screenshot-arkansascity.jpg">
         <p>ArkansasCityUSA.com Is a wordpress site that I built for our state represetitive in order to premote tourism to the historic town of Arkansas City. It features a javascipt powered image carocel header.</p>
       </div><!--img-box-->
+
   </div><!--wrapper-->
 </section><!--work-->
 <!--end-work-section
@@ -172,12 +172,12 @@
   <p>When Im not working I enjoy spending time in nature, exercsing, cooking heathly & delicious meals, listening to music & podcasts, or watching tutorial videos and documenteries.</p>
 <br>
   <p>If you have any questions or would like to work together or offer me job you can reach me at Blake@edelta.net</p>
+        <a class="button small-only" href="#">Download Resume.pdf</a>
   </div><!--wrapper-->
   
   <div class="dt-only">
-    
       <div class="skills">
-      <h2>skills</h2>
+        <h2>Skills</h2>
         <ul>
           <li>HTML5</li>
           <li>CSS3</li>
@@ -191,23 +191,27 @@
           <li>DreamWeaver</li>
         </ul>
       </div><!--skills-->
+      
       <div class="intrests">
-      <h2>Intrests</h2>
-      <ul>
+        <h2>Intrests</h2>
+        <ul>
           <li>SASS</li>
           <li>Linux</li>
           <li>Angular.JS</li>
           <li>React</li>
           <li>MYSQL</li>
           <li>FlexBox</li>
-      </ul>
-    </div><!--intrests-->
+        </ul>
+      </div><!--intrests-->
+   
+    <div class="resume">
+      <a class="button" href="">Download Resume.pdf</a>
+    </div><!--resume-->
+
   </div><!--dt-only-->
-
-
-
 </section><!--about-->
 <a href="#" class="back-to-top">Back to Top</a>
+
 <!--end-about-section
 ====================================================-->
 
@@ -219,7 +223,7 @@
 <!--nav-menue-toggle-->
 <script>
 $(document).ready(function(){
-    $("button").click(function(){
+    $("nav button").click(function(){
         $(".nav-menue").toggle();
     });
 });
