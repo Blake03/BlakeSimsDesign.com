@@ -262,10 +262,9 @@ button:focus {
 }
 .ghost-button-semi-transparent:hover,
 .ghost-button-semi-transparent:active {
-  background-color: #fff; /* fallback */
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
   border-color: #fff; /* fallback */
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
   -webkit-transition: background-color 0.3s ease-in,
               border-color 0.3s ease-in;
           transition: background-color 0.3s ease-in,
@@ -388,6 +387,18 @@ a.back-to-top {
     margin-top: 65px;
     font-size: 1.2em;
 }
+
+.button:hover{
+  background: #0e7b17;
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button:active{
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 0px 0px 0 rgba(0,0,0,0);
+  border: 1px solid #565252;
+}
+  }
+
 
 
 /* ==========================================================================
@@ -557,6 +568,8 @@ h3{
 
 @media only screen and (min-width: 71em) {
 
+body { overflow-y: scroll; }
+
 .dt-only{
 display: inherit;
 }
@@ -594,6 +607,7 @@ display: inherit;
 .ghost-button-semi-transparent {
   font-size: 19px;
   width: unset;
+  padding: 5px 10px;
 }
 
 #welcome span{
@@ -617,18 +631,12 @@ display: inherit;
     display: none !important;
 }
 
-.responsive-screenshot{
-    padding: 0px 46px;
-    max-height: 74vh;
-    float: left;
-}
-
 .img-box img{
   max-height: 72vh;
 }
 
 .img-box {
-    width: 26vw;
+    width: 25vw;
     margin: 0px 23px;
     display: inline-block;
 }
@@ -644,6 +652,13 @@ display: inherit;
 
 h4{
   text-align: center;
+}
+
+/*--work---------------------------------------------*/
+.responsive-screenshot{
+    padding: 0px 46px;
+    max-height: 74vh;
+    float: left;
 }
 
 /*--who-I-am---------------------------------------------*/
@@ -683,18 +698,7 @@ h4{
   margin: 0 auto;
 }
 
-.ghost-button {
-  display: inline-block;
-  width: 200px;
-  padding: 8px;
-  color: #fff;
-  border: 3px solid #fff;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  margin-top: 45px;
-  font-size: 2em;
-}
+
 
 
 }
